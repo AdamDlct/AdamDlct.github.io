@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Mon CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">    
+    <!-- Ajout : police moderne et styles intégrés pour une mise en forme claire et responsive -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site-wrapper">
+        <aside class="sidebar">
+            <button class="dropdown-btn">Blocs de compétences ▼</button>
+            <ul class="dropdown-list">
+                <li><a href="bloc_gerer_patrimoine.html" target="_blank">Gérer le patrimoine informatique</a></li>
+                <li><a href="bloc_incidents_assistance.html" target="_blank">Répondre aux incidents et aux demandes</a></li>
+                <li><a href="bloc_presence_en_ligne.html" target="_blank">Développer la présence en ligne</a></li>
+                <li><a href="bloc_mode_projet.html" target="_blank">Travailler en mode projet</a></li>
+                <li><a href="bloc_service_informatique.html" target="_blank">Mettre à disposition un service informatique</a></li>
+                <li><a href="bloc_developpement_pro.html" target="_blank">Organiser son développement professionnel</a></li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <script>
+            const btn = document.querySelector('.dropdown-btn');
+            const list = document.querySelector('.dropdown-list');
+            btn.addEventListener('click', () => {
+                list.classList.toggle('show');
+            });
+            </script>
+            <header class="site-header">
+                <div class="container-header">
+                    <h1>DELACOTTE ADAM</h1>
+                    <p>Bienvenue sur mon portfolio</p>
+                </div>
+            </header>
+            <!-- Remplacement de <section> par <main class="container"> pour une meilleure sémantique et utilisation des styles -->
+            <main class="container">
+                <div class="info">
+                    <div>
+                        <h2>Informations personnelles</h2>
+                        <p><strong>Nom :</strong> DELACOTTE Adam</p>
+                        <p><strong>Email :</strong> adam.delacotte@limayrac.fr</p>
+                        <p><strong>Téléphone :</strong> +33 06 59 53 13 81</p>
+                        <p><strong>Adresse :</strong> 4 rue Péchestier 31130 Quint-Fonsegrives</p>
+                    </div>
+                    <div>
+                        <h2>À propos de moi</h2>
+                        <p>
+                            Passionné(e) par le développement informatique, je possède une solide expérience en création de site internet statique et dynamique. Je suis motivé(e) à l'idée de contribuer à des projets innovants et de continuer à développer mes compétences techniques.
+                        </p>
+                    </div>
+                </div>
+                <h2>Compétences</h2>
+                <div class="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                </div>
+                <h2>Expériences professionnelles</h2>
+                <ul>
+                    <li>
+                        <strong>STAGIAIRE REPARATEUR SMARTPHONE</strong><br> chez DJ REPAR 81 | Durée : 1 Mois<br>
+                        <em>
+                            - Diagnostic et réparation <br>
+                            - Service client : Assistance et conseils personnalisés <br>
+                            - Vente en boutique
+                        </em>
+                    </li>
+                    <li>
+                        <strong>STAGIAIRE INFORMATIQUE</strong><br> chez AIRS INFORMATIQUE| Durée : 2 Mois<br>
+                        <em>
+                            - installation baie de brassages, Modem et routeur, solutions réseaux. <br>
+                            - Maintenance informatique réactive. <br>
+                            - Vente de matériel : Serveurs, postes bureautique , portable et tablettes, Terminaux & périphérique, points de vente, solutions d’impression.
+                        </em>
+                    </li>
+                    <li>
+                        <strong>STAGIAIRE INFORMATIQUE</strong><br> chez BIS REPETITA | Durée : 1 Mois<br>
+                        <em>
+                            - Diagnostic et réparation matérielle professionnel <br>
+                            - Traitement et effacement de données <br>
+                            - Gestion des D3E (PC, composants..)
+                        </em>
+                    </li>
+                </ul>
+                <h2>Formations</h2>
+                <ul>
+                    <li>
+                        <strong>BTS SIO (Services Informatiques aux Organisations)</strong> - Institut Limayrac, 2025
+                    </li>
+                    <li>
+                        <strong>BAC professionnel système numérique option RISC</strong> - De La Salle, 2021 - 2024
+                    </li>
+                </ul>
+                <!--Lien visuel pour le CV-->
+                <h2>Mon CV</h2>
+                <p>
+                    Consultez mon CV : <a href="CV_DELACOTTE_ADAM.html" target="_blank" rel="noopener noreferrer">Ouvrir le CV</a>
+                </p>
+                <p>Aperçu :</p>
+                <div class="cv-preview">
+                    <iframe src="CV_DELACOTTE_ADAM.html" title="Aperçu du CV"></iframe>
+                    <p style="font-size:0.9rem;padding:0.5rem;margin:0;background:#fff;">Si l'aperçu ne s'affiche pas, cliquez sur le lien ci-dessus pour ouvrir le CV dans un nouvel onglet.</p>
+                </div>
+            </main>
+            <footer>
+                &copy; 2025 DELACOTTE Adam - Portfolio CV
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

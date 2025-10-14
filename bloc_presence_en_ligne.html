@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Développer la présence en ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <aside class="sidebar">
+            <button class="dropdown-btn">Blocs de compétences ▼</button>
+            <ul class="dropdown-list">
+                <li><a href="index.html">Page d'accueil</a></li>
+                <li><a href="bloc_gerer_patrimoine.html" target="_blank">Gérer le patrimoine informatique</a></li>
+                <li><a href="bloc_incidents_assistance.html" target="_blank">Répondre aux incidents et aux demandes</a></li>
+                <li><a href="bloc_presence_en_ligne.html" target="_blank">Développer la présence en ligne</a></li>
+                <li><a href="bloc_mode_projet.html" target="_blank">Travailler en mode projet</a></li>
+                <li><a href="bloc_service_informatique.html" target="_blank">Mettre à disposition un service informatique</a></li>
+                <li><a href="bloc_developpement_pro.html" target="_blank">Organiser son développement professionnel</a></li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <header class="site-header">
+                <div class="container-header">
+                    <h1>Développer la présence en ligne de l’organisation</h1>
+                </div>
+            </header>
+            <main class="container">
+                <h2>Description</h2>
+                <p>Ce bloc concerne la création, la gestion et l’optimisation de la présence numérique de l’organisation (site web, réseaux sociaux, etc.).</p>
+            </main>
+            <footer>
+                &copy; 2025 DELACOTTE Adam - Portfolio CV
+            </footer>
+        </div>
+    </div>
+    <script>
+    const btn = document.querySelector('.dropdown-btn');
+    const list = document.querySelector('.dropdown-list');
+    btn.addEventListener('click', () => {
+        list.classList.toggle('show');
+    });
+    </script>
+</body>
+</html>
