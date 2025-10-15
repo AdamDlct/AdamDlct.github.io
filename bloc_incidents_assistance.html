@@ -35,11 +35,15 @@
         </div>
     </div>
     <script>
-    const btn = document.querySelector('.dropdown-btn');
-    const list = document.querySelector('.dropdown-list');
-    btn.addEventListener('click', () => {
+        document.addEventListener("DOMContentLoaded", function() {
+        const btn = document.querySelector('.dropdown-btn');
+        const list = document.querySelector('.dropdown-list');
+        btn.addEventListener('click', () => {
         list.classList.toggle('show');
+        btn.setAttribute('aria-expanded', list.classList.contains('show'));
+      });
     });
     </script>
 </body>
 </html>
+
