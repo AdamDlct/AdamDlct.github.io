@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="loader" style="display:none;"></div>
+    <script>
+        window.addEventListener("DOMContentLoaded",()=>{document.getElementById("loader").style.display="none";});
+    </script>
     <div class="site-wrapper">
         <aside class="sidebar">
             <button class="dropdown-btn">Blocs de compétences ▼</button>
@@ -23,11 +27,14 @@
         </aside>
         <div class="main-content">
             <script>
-            const btn = document.querySelector('.dropdown-btn');
-            const list = document.querySelector('.dropdown-list');
-            btn.addEventListener('click', () => {
+                document.addEventListener("DOMContentLoaded", function() {
+                const btn = document.querySelector('.dropdown-btn');
+                const list = document.querySelector('.dropdown-list');
+                btn.addEventListener('click', () => {
                 list.classList.toggle('show');
-            });
+                btn.setAttribute('aria-expanded', list.classList.contains('show'));
+                  });
+                });
             </script>
             <header class="site-header">
                 <div class="container-header">
@@ -113,4 +120,5 @@
         </div>
     </div>
 </body>
+
 </html>
